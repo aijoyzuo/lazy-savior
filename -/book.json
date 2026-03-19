@@ -1,0 +1,566 @@
+{
+    "questionnaire": {
+        "title": "懶惰書迷看什麼？",
+        "titlePic": "https://images.plurk.com/7EcCdUS4IqxDzf03xeKeag.jpg ",
+        "questions": [
+            {
+                "id": "book",
+                "field": "book",
+                "type": "range",
+                "question": "你有多少時間可以看書？",
+                "min": 0,
+                "max": 120,
+                "unit": "分鐘"
+            },
+            {
+                "id": "genre",
+                "field": "genre",
+                "type": "radio",
+                "question": "你的閱讀偏好？",
+                "options": [
+                    {
+                        "id": "fiction",
+                        "label": "小說"
+                    },
+                    {
+                        "id": "history",
+                        "label": "歷史"
+                    },
+                    {
+                        "id": "inspiration",
+                        "label": "勵志"
+                    },
+                    {
+                        "id": "mystery",
+                        "label": "懸疑"
+                    }
+                ]
+            },
+            {
+                "id": "preference",
+                "field": "preference",
+                "type": "radio",
+                "question": "系列作偏好？",
+                "options": [
+                    {
+                        "id": "none",
+                        "label": "不限"
+                    },
+                    {
+                        "id": "standalone",
+                        "label": "單行本"
+                    },
+                    {
+                        "id": "series",
+                        "label": "系列作"
+                    }
+                ]
+            },
+            {
+                "id": "rating",
+                "field": "rating",
+                "type": "radio",
+                "question": "書籍年齡層",
+                "options": [
+                    {
+                        "id": "child",
+                        "label": "兒童讀物"
+                    },
+                    {
+                        "id": "general",
+                        "label": "普遍級"
+                    },
+                    {
+                        "id": "restricted",
+                        "label": "限制級"
+                    }
+                ]
+            },
+            {
+                "id": "language",
+                "field": "language",
+                "type": "checkbox",
+                "question": "語系偏好(複選)",
+                "options": [
+                    {
+                        "id": "western",
+                        "label": "歐美"
+                    },
+                    {
+                        "id": "japanese",
+                        "label": "日文"
+                    },
+                    {
+                        "id": "korean",
+                        "label": "韓文"
+                    },
+                    {
+                        "id": "mandarin",
+                        "label": "華文"
+                    }
+                ]
+            },
+            {
+                "id": "mood",
+                "field": "mood",
+                "type": "checkbox",
+                "question": "現在想要(複選)",
+                "options": [
+                    {
+                        "id": "emotional",
+                        "label": "感性一下"
+                    },
+                    {
+                        "id": "relaxing",
+                        "label": "放鬆一下"
+                    },
+                    {
+                        "id": "thrilling",
+                        "label": "刺激一下"
+                    }
+                ]
+            }
+        ],
+        "required": {
+            "radio": [
+                "duration",
+                "genre",
+                "preference",
+                "rating"
+            ],
+            "checkbox": [
+                "language",
+                "mood"
+            ]
+        }
+    },
+    "books": [
+        {
+            "id": "book001",
+            "title": "The Westing Game",
+            "author": "Ellen Raskin",
+            "description": "經典的少年偵探小說，講述一群少年被捲入富翁遺產謎團中。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=CEy5DwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3OAB2OAjp6tlpKN3J49ykSQca7bA&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book002",
+            "title": "The Secret Garden",
+            "author": "Frances Hodgson Burnett",
+            "description": "一個小女孩復甦神祕花園的療癒童話故事。",
+            "image": "https://books.google.com.tw/books/content?id=9nbBwFzi0KcC&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0Yv9CFxMWvxsrjtA_zkYWn4uNoSQ&w=1280",
+            "duration": "long",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "relaxing",
+                "emotional"
+            ]
+        },
+        {
+            "id": "book003",
+            "title": "Holes",
+            "author": "Louis Sachar",
+            "description": "一部融合懲罰與命運的少年冒險小說。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=zx5hDwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0JAQX61agzycJvEGX0T38mIztGvg&w=1280",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "series",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book004",
+            "title": "Mystery of the Burnt Cottage",
+            "author": "Enid Blyton",
+            "description": "「五位小偵探」系列首部，孩子們破解起火謎團。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=C9CAEAAAQBAJ&hl=zh-TW&pg=PA1&img=1&zoom=3&bul=1&sig=ACfU3U2lemJDFcZDgA9H3AgUaPuskayCHQ&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "series",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book005",
+            "title": "The Maze of Bones",
+            "author": "Rick Riordan",
+            "description": "《39 线索》系列首部，尋找祖先的祕密遺產。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=4XluEAAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3hdoflQ_TVXyJYLVwDSuMlCQal-A&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "series",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book006",
+            "title": "Nancy Drew: The Secret of the Old Clock",
+            "author": "Carolyn Keene",
+            "description": "南茜‧卓的首本偵探冒險，展開傳奇之旅。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=JgUTEAAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2-7U70nknPHS6sqgf4hh4MfPIbAQ&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "series",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book007",
+            "title": "Kiki's Delivery Service",
+            "author": "Eiko Kadono",
+            "description": "魔女琪琪離家學習獨立飛行與生活的成長故事。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=8VvZDwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2z6x30TJGMZhRC7dGPisQ0tkzzTQ&w=1280",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "japanese"
+            ],
+            "mood": [
+                "relaxing",
+                "emotional"
+            ]
+        },
+        {
+            "id": "book008",
+            "title": "Garden Treasures (庭の宝物)",
+            "author": "—",
+            "description": "四季園林裡的小故事與自然發現。",
+            "image": "https://books.google.com.tw/books/content?id=Q9s7AQAAMAAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2yPuM8wLaeojZWt7X3AGrDvGj9tQ&w=1025",
+            "duration": "short",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "japanese"
+            ],
+            "mood": [
+                "relaxing"
+            ]
+        },
+        {
+            "id": "book009",
+            "title": "Sneakily Tiptoeing Forward!",
+            "author": "—",
+            "description": "鼓勵孩子探索世界的互動繪本。",
+            "image": "https://japanesebooks.jp/wp-content/uploads/2019/05/94ec6689ea71cb1862039e1f8f2985e5.jpg",
+            "duration": "short",
+            "genre": "fiction",
+            "preference": "series",
+            "rating": "child",
+            "language": [
+                "japanese"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book010",
+            "title": "Cloud Bread (구름빵)",
+            "author": "Baek Hee‑na",
+            "description": "貓咪兄妹製作會飛的雲朵麵包的溫馨故事。",
+            "image": "https://m.media-amazon.com/images/I/51IwzG7599L._UX500_FMwebp_QL85_.jpg",
+            "duration": "short",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "korean"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book011",
+            "title": "The Giving Tree（韓文版）",
+            "author": "Shel Silverstein",
+            "description": "友情與無私奉獻的經典童話（首見韓文譯本）。",
+            "image": "https://m.media-amazon.com/images/I/31FFs9uISFL.jpg",
+            "duration": "short",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "korean"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book012",
+            "title": "三國演義 (簡體版)",
+            "author": "羅貫中",
+            "description": "中國四大名著之一，描述英雄割據三國的歷史。",
+            "image": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/063/63/0010636391.jpg&v=5371f49dk&w=348&h=348",
+            "duration": "long",
+            "genre": "history",
+            "preference": "series",
+            "rating": "general",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book013",
+            "title": "紅樓夢",
+            "author": "曹雪芹",
+            "description": "中國古典文學巔峰，展現貴族家族興衰。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=Bs17DwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0AAaHJdiN81_hjUzUhSn5VSKmUSg&w=1280",
+            "duration": "long",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book014",
+            "title": "三毛流浪記",
+            "author": "張樂平",
+            "description": "講述小畫家三毛的街頭生活冒險。",
+            "image": "https://s.yimg.com/ob/image/6e64b6e5-29a4-4b52-8f14-c96315e1d45f.jpg",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "relaxing"
+            ]
+        },
+        {
+            "id": "book015",
+            "title": "狼王夢",
+            "author": "沈石溪",
+            "description": "以狼的視角寫成的動物寓言小說。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=oPUUCgAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1ndX0H78d6WJzaccQWT0Cd5MI_bA&w=1280",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book016",
+            "title": "解憂雜貨店",
+            "author": "東野圭吾",
+            "description": "神秘雜貨店幫助人們解開煩惱的故事。",
+            "image": "https://upload.wikimedia.org/wikipedia/zh/2/2b/NAMIYA_ZAKKATEN_NO_KISEKI%28TW%29.jpg",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "japanese"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book017",
+            "title": "走開！屁股！",
+            "author": "莊沛文",
+            "description": "台灣兒童繪本，幽默教導分享與友誼。",
+            "image": "https://ioveyi.tw/wp-content/uploads/20191119145625_45.jpg",
+            "duration": "short",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book018",
+            "title": "怪怪怪物",
+            "author": "九把刀",
+            "description": "臺灣作家九把刀多元短篇與青春小說合集。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=Vtr0DwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3rhyQc8nigMTZdc439ic531b8luA&w=1280",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "series",
+            "rating": "general",
+            "language": [
+                "mandarin"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book019",
+            "title": "The Night Gardener",
+            "author": "Jonathan Auxier",
+            "description": "哥德式童話，孤兒兄妹與神祕雕像的故事。",
+            "image": "https://books.google.com.tw/books/content?id=mKz52dDWxY4C&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2C7-3tVdPeCT3EOKPfIp9yTWsr5w&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book020",
+            "title": "Murder Most Unladylike",
+            "author": "Robin Stevens",
+            "description": "1920年代的校園偵探推理系列第一本。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=Gbp1CwAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1c-TkuqgZQqDzL01ACMq1ZmuPc8w&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "series",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book021",
+            "title": "Fox Goes North",
+            "author": "Jeremy Strong",
+            "description": "溫馨青少年的成長與歷史融合故事。",
+            "image": "https://img.pchome.com.tw/cs/items/DJBQD8D900HY043/000001_1728576348.jpg",
+            "duration": "long",
+            "genre": "fiction",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "emotional"
+            ]
+        },
+        {
+            "id": "book022",
+            "title": "The Curious Incident of the Dog in the Night-Time",
+            "author": "Mark Haddon",
+            "description": "自閉少年偵測狗被刺的謎案，獨特敘事視角。",
+            "image": "https://books.google.com.tw/books/content?id=loC0vNA1a4IC&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U3OS3_WvhEtboh6tcRglvGrFpxpWg&w=1280",
+            "duration": "medium",
+            "genre": "mystery",
+            "preference": "standalone",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book023",
+            "title": "Young Gothic",
+            "author": "M A Bennett",
+            "description": "青少年系列，哥德風格校園驚悚故事。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=ncXjEAAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U1P8p4ecasOtqkJc7JyS0wYwZrShg&w=1280",
+            "duration": "medium",
+            "genre": "fiction",
+            "preference": "series",
+            "rating": "general",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book024",
+            "title": "The Beanstalk Murder",
+            "author": "P G Bell",
+            "description": "結合童話與偵探的中年級懸疑小說。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=45YMEQAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U2U9wgv3KXWpceaYLVsho3LjuSHnw&w=1280",
+            "duration": "short",
+            "genre": "mystery",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        },
+        {
+            "id": "book025",
+            "title": "Super Sleuth",
+            "author": "David Walliams",
+            "description": "大衛·威廉姆斯最新兒童校園推理作品。",
+            "image": "https://books.google.com.tw/books/publisher/content?id=s-4KEQAAQBAJ&hl=zh-TW&pg=PP1&img=1&zoom=3&bul=1&sig=ACfU3U0i5JcNwvHQ_1i8SDx4Wx9Xz2v8tg&w=1280",
+            "duration": "short",
+            "genre": "mystery",
+            "preference": "standalone",
+            "rating": "child",
+            "language": [
+                "western"
+            ],
+            "mood": [
+                "thrilling"
+            ]
+        }
+    ]
+}

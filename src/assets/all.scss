@@ -1,0 +1,26 @@
+@import "bootstrap/scss/functions";//為了將bootstrap的變數移為己用
+@import "./variables";//從node裡面移出來的bootstrap變數設定檔
+@import "bootstrap/scss/bootstrap";
+@import "quiz";
+@import "recommend";
+@import "wheel";
+@import "loadingOverlay";
+@import "lightbox";
+
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url('https://images.plurk.com/547MaKge7wUmGa0UHiS9r2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ✅ 可選：讓背景不滾動 */
+  min-height: 100vh;
+  font-family: "Roboto Condensed", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}

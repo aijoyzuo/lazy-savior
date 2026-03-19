@@ -1,0 +1,144 @@
+.movie-quiz label,
+.book-quiz label,
+.food-quiz label {
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease;
+}
+
+/* 滑過時，背景微亮、邊框換色 */
+.movie-quiz label:hover {
+  background-color: rgba(202, 66, 49, .12);
+  border-color: #ca4231;
+}
+
+.book-quiz label:hover {
+  background-color: rgba(77, 96, 110, .12);
+  border-color: #4D606E;
+}
+
+.food-quiz label:hover {
+  background-color: rgba(246, 218, 133, .20);
+  border-color: #f6da85;
+}
+
+/*點選時的方框框*/
+.form-check-input:focus {
+  outline: none;
+  /* 取消 outline */
+  box-shadow: none;
+  /* 取消 Bootstrap 的藍色 glow */
+}
+
+/* 當 input 被選中時，套用背景色變化 */
+.movie-quiz label.option-label:has(input:checked) {
+  background-color: #e29da2;
+  color: #ffffff;
+  border-color: #ca4231;
+}
+
+.book-quiz label.option-label:has(input:checked) {
+  background-color: #90b4cf;
+  color: #ffffff;
+  border-color: #4d606e;
+}
+
+.food-quiz label.option-label:has(input:checked) {
+  background-color: #f6da85;
+  color: #ffffff;
+  border-color: #f6da85;
+}
+
+
+.movie-quiz input[type="radio"]:checked,
+.movie-quiz input[type="checkbox"]:checked {
+  appearance: auto;
+  accent-color: #ca4231 !important;
+}
+
+.book-quiz input[type="radio"]:checked,
+.book-quiz input[type="checkbox"]:checked {
+  appearance: auto;
+  accent-color: #4D606E !important;
+}
+
+.food-quiz input[type="radio"]:checked,
+.food-quiz input[type="checkbox"]:checked {
+  appearance: auto;
+  accent-color: #f6da85 !important;
+}
+
+//slider
+/* movie 顏色滑桿 thumb */
+.slider-movie.form-range::-webkit-slider-thumb {
+  background-color: rgb(202, 66, 49);
+  border: none;
+}
+
+.slider-movie.form-range::-moz-range-thumb {
+  background-color: #ca4231;
+  border: none;
+}
+
+.slider-movie.form-range::-ms-thumb {
+  background-color: #ca4231;
+  border: none;
+}
+
+/* 可選：調整 track 顏色 */
+.slider-movie.form-range::-webkit-slider-runnable-track {
+  background-color: #ffe8e8;
+}
+
+.slider-movie.form-range::-moz-range-track {
+  background-color: #ffe8e8;
+}
+
+/* book 顏色滑桿 thumb */
+.slider-book.form-range::-webkit-slider-thumb {
+  background-color: #4D606E;
+  border: none;
+}
+
+.slider-book.form-range::-moz-range-thumb {
+  background-color: #4D606E;
+  border: none;
+}
+
+.slider-book.form-range::-ms-thumb {
+  background-color: #4D606E;
+  border: none;
+}
+
+/* 可選：調整 track 顏色 */
+.slider-book.form-range::-webkit-slider-runnable-track {
+  background-color: #90b4cf;
+}
+
+.slider-book.form-range::-moz-range-track {
+  background-color: #90b4cf;
+}
+
+/* food 顏色滑桿 thumb */
+.slider-food.form-range::-webkit-slider-thumb {
+  background-color: #EDBF8D;
+  border: none;
+}
+
+.slider-food.form-range::-moz-range-thumb {
+  background-color: #EDBF8D;
+  border: none;
+}
+
+.slider-food.form-range::-ms-thumb {
+  background-color: #EDBF8D;
+  border: none;
+}
+
+/* 可選：調整 track 顏色 */
+.slider-food.form-range::-webkit-slider-runnable-track {
+  background-color: #f8eabf;
+}
+
+.slider-food.form-range::-moz-range-track {
+  background-color: #f8eabf;
+}

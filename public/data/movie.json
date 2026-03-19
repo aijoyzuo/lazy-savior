@@ -1,0 +1,132 @@
+{
+    "data": {
+        "title": "懶惰影迷看什麼？",
+        "titlePic": "https://images.plurk.com/5z4IlpXfbtkOs151EpW2Kc.jpg",
+        "questions": [
+            {
+                "id": "duration",
+                "field": "duration",
+                "type": "range",
+                "label": "你有多少時間可以看電影？",
+                "required": true,
+                "unit": "分鐘",
+                "min": 30,
+                "max": 180,
+                "step": 15,
+                "default": 90
+            },
+            {
+                "id": "person",
+                "field": "person",
+                "type": "radio",
+                "label": "今日影迷有幾位？",
+                "required": true,
+                "options": [
+                    {
+                        "id": "single",
+                        "label": "一人"
+                    },
+                    {
+                        "id": "couple",
+                        "label": "兩人"
+                    },
+                    {
+                        "id": "group",
+                        "label": "多人"
+                    }
+                ]
+            },
+            {
+                "id": "afterMovie",
+                "field": "afterMovie",
+                "type": "radio",
+                "label": "電影之後的行程？",
+                "required": true,
+                "options": [
+                    {
+                        "id": "sleep",
+                        "label": "躺平"
+                    },
+                    {
+                        "id": "dining",
+                        "label": "用餐"
+                    },
+                    {
+                        "id": "outdoor",
+                        "label": "戶外活動"
+                    }
+                ]
+            },
+            {
+                "id": "rating",
+                "field": "rating",
+                "type": "radio",
+                "label": "電影評價選擇",
+                "required": true,
+                "options": [
+                    {
+                        "id": "dontcare",
+                        "label": "都可以"
+                    },
+                    {
+                        "id": "high",
+                        "label": "高於六分"
+                    }
+                ],
+                "weight": 3
+            },
+            {
+                "id": "language",
+                "field": "language",
+                "type": "checkbox",
+                "label": "語系偏好（可複選）",
+                "minSelect": 1,
+                "options": [
+                    {
+                        "id": "western",
+                        "label": "歐美"
+                    },
+                    {
+                        "id": "japanese",
+                        "label": "日文"
+                    },
+                    {
+                        "id": "korean",
+                        "label": "韓文"
+                    },
+                    {
+                        "id": "mandarin",
+                        "label": "華文"
+                    }
+                ],
+                "weight": 3
+            },
+            {
+                "id": "mood",
+                "field": "mood",
+                "type": "checkbox",
+                "label": "你今天想要（可複選）",
+                "minSelect": 1,
+                "options": [
+                    {
+                        "id": "cry",
+                        "label": "哭哭啼啼"
+                    },
+                    {
+                        "id": "laugh",
+                        "label": "放聲大笑"
+                    },
+                    {
+                        "id": "shock",
+                        "label": "來點驚嚇"
+                    },
+                    {
+                        "id": "romantic",
+                        "label": "浪漫一波"
+                    }
+                ],
+                "weight": 2
+            }
+        ]
+    }
+}

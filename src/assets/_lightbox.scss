@@ -1,0 +1,114 @@
+/* 背景與置中 */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+/* 外層：由圖片實際尺寸決定寬度；圓角與裁切在這裡做 */
+.lightbox-img-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* 不再固定寬度，改用上限，讓 wrapper 依子元素（圖片）寬度縮放 */
+  max-width: min(720px, 92vw);
+
+  border-radius: 8px;
+  overflow: hidden; /* 讓 overlay 與圖片一起被裁切 */
+}
+
+/* 圖片：不強制 100% 寬，改用 max-*，配合 max-height 做等比縮放 */
+.lightbox-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 48px); /* 視窗高 - 上下 padding(24*2) */
+  object-fit: contain;
+  /* 圓角交給 wrapper，這裡不再設 */
+}
+
+.lightbox-img.small {
+  width: clamp(500px, 50vw, 600px);
+  max-width: 100%;
+}
+
+/* 共同外觀 */
+.lightbox-info {
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  padding: 12px 14px;
+  backdrop-filter: saturate(140%) blur(2px);
+}
+
+/* 覆蓋在圖片底部，寬度與圖片（= wrapper）完全一致 */
+.lightbox-info.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+
+  max-height: 40vh;   /* 內容太多時在黑框內捲動 */
+  overflow: auto;
+
+  pointer-events: auto;
+  z-index: 2;
+
+  /* 與 wrapper 圓角對齊，只保留下緣 */
+  border-radius: 0 0 8px 8px;
+
+  /* 確保不被 margin/box model 撐出 */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 小籤樣式（可依喜好調整） */
+.lightbox-meta__chip {
+  background: rgba(255, 255, 255, .12);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.lightbox-meta__label { opacity: .85; }
+
+/* 導覽/關閉 & 徽章層級 */
+.lightbox-btn,
+.lightbox-close {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  z-index: 4;
+}
+.lightbox-prev { left: 12px; }
+.lightbox-next { right: 12px; }
+.lightbox-close {
+  top: 12px;
+  right: 12px;
+  font-size: 32px;
+}
+.lightbox-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(202, 66, 49, .9);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 3;
+}

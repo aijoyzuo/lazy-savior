@@ -1,0 +1,1572 @@
+{
+  "data": [
+    {
+      "id": "food001",
+      "title": "韓式炸雞",
+      "description": "酥脆外皮搭配甜辣醬汁，韓味十足",
+      "image": "/images/food/001.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double",
+        "group"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "韓式料理"
+      ],
+      "occasion": [
+        "casual",
+        "celebrate",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "korean",
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "celebrate",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food002",
+      "title": "日式壽司",
+      "description": "新鮮握壽司與手卷搭配味噌湯",
+      "image": "/images/food/002.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "premium",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "romantic",
+        "celebrate"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "premium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "romantic",
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food003",
+      "title": "泰式綠咖哩雞",
+      "description": "香料濃郁的綠咖哩搭配椰奶",
+      "image": "/images/food/003.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "泰式料理"
+      ],
+      "occasion": [
+        "casual",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "thai"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food004",
+      "title": "義式海鮮燉飯",
+      "description": "吸飽海鮮鮮味的濕潤米飯",
+      "image": "/images/food/004.jpg",
+      "duration": "long",
+      "person": [
+        "double",
+        "group"
+      ],
+      "diet": "葷素皆可",
+      "rating": "premium",
+      "preference": [
+        "義式料理"
+      ],
+      "occasion": [
+        "celebrate",
+        "romantic"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "long"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double",
+            "group"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "premium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "italian"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "celebrate",
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food005",
+      "title": "宮保雞丁蓋飯",
+      "description": "經典中式熱炒，微辣下飯",
+      "image": "/images/food/005.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "中式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "chinese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food006",
+      "title": "素食南瓜咖哩飯",
+      "description": "溫潤南瓜搭配香料，無肉也豐富",
+      "image": "/images/food/006.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "素食",
+      "rating": "budget",
+      "preference": [
+        "泰式料理"
+      ],
+      "occasion": [
+        "casual",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "thai"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food007",
+      "title": "韓式部隊鍋",
+      "description": "泡菜、年糕與火腿熱騰騰上桌",
+      "image": "/images/food/007.jpg",
+      "duration": "long",
+      "person": [
+        "double",
+        "group"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "韓式料理"
+      ],
+      "occasion": [
+        "family",
+        "celebrate"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "long"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double",
+            "group"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "korean"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "family",
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food008",
+      "title": "日式拉麵",
+      "description": "濃厚豚骨湯底與彈牙麵條",
+      "image": "/images/food/008.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food009",
+      "title": "泰式涼拌青木瓜",
+      "description": "酸辣開胃，輕食首選",
+      "image": "/images/food/009.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "素食",
+      "rating": "budget",
+      "preference": [
+        "泰式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "thai"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food010",
+      "title": "義式瑪格麗特披薩",
+      "description": "經典番茄起司羅勒，簡單純粹",
+      "image": "/images/food/010.jpg",
+      "duration": "medium",
+      "person": [
+        "double",
+        "group"
+      ],
+      "diet": "素食",
+      "rating": "medium",
+      "preference": [
+        "義式料理"
+      ],
+      "occasion": [
+        "family",
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double",
+            "group"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "italian"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "family",
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food011",
+      "title": "小籠包套餐",
+      "description": "湯汁飽滿，搭配小菜與湯品",
+      "image": "/images/food/011.jpg",
+      "duration": "medium",
+      "person": [
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "中式料理"
+      ],
+      "occasion": [
+        "celebrate",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "chinese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "celebrate",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food012",
+      "title": "日式豆腐鍋",
+      "description": "清爽高湯與蔬菜豆腐",
+      "image": "/images/food/012.jpg",
+      "duration": "long",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "素食",
+      "rating": "medium",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "family",
+        "romantic"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "long"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "family",
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food013",
+      "title": "韓式拌飯",
+      "description": "拌入辣醬與各式配料",
+      "image": "/images/food/013.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "韓式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "korean"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food014",
+      "title": "泰式酸辣海鮮湯",
+      "description": "Tom Yum 濃郁酸辣風味",
+      "image": "/images/food/014.jpg",
+      "duration": "medium",
+      "person": [
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "泰式料理"
+      ],
+      "occasion": [
+        "celebrate"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "thai"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food015",
+      "title": "焗烤千層麵",
+      "description": "起司牽絲，濃郁肉醬層層堆疊",
+      "image": "/images/food/015.jpg",
+      "duration": "long",
+      "person": [
+        "double",
+        "group"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "義式料理"
+      ],
+      "occasion": [
+        "family",
+        "celebrate"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "long"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "double",
+            "group"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "italian"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "family",
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food016",
+      "title": "中式便當",
+      "description": "經濟實惠，主菜與配菜兼備",
+      "image": "/images/food/016.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "中式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "chinese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food017",
+      "title": "素食炒米粉",
+      "description": "簡單又美味的傳統台灣素食料理",
+      "image": "/images/food/017.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "素食",
+      "rating": "budget",
+      "preference": [
+        "中式料理"
+      ],
+      "occasion": [
+        "casual",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "chinese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food018",
+      "title": "義式燉蔬菜湯",
+      "description": "羅宋湯風格的清爽蔬菜料理",
+      "image": "/images/food/018.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "素食",
+      "rating": "medium",
+      "preference": [
+        "義式料理"
+      ],
+      "occasion": [
+        "casual",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "italian"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food019",
+      "title": "韓式石鍋拌飯",
+      "description": "鍋巴香脆，辣醬提升風味",
+      "image": "/images/food/019.jpg",
+      "duration": "long",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "韓式料理"
+      ],
+      "occasion": [
+        "celebrate"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "long"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "korean"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "celebrate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food020",
+      "title": "日式炸蝦蓋飯",
+      "description": "酥炸天婦羅淋醬飯",
+      "image": "/images/food/020.jpg",
+      "duration": "medium",
+      "person": [
+        "single"
+      ],
+      "diet": "葷素皆可",
+      "rating": "medium",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "casual",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "family"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food021",
+      "title": "素食炒河粉",
+      "description": "Q彈河粉搭配豆芽與蔬菜",
+      "image": "/images/food/021.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "素食",
+      "rating": "budget",
+      "preference": [
+        "泰式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "thai"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food022",
+      "title": "蒜香義大利麵",
+      "description": "橄欖油與蒜片簡單卻美味",
+      "image": "/images/food/022.jpg",
+      "duration": "short",
+      "person": [
+        "single"
+      ],
+      "diet": "素食",
+      "rating": "budget",
+      "preference": [
+        "義式料理"
+      ],
+      "occasion": [
+        "casual",
+        "romantic"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "italian"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food023",
+      "title": "廣東雲吞湯麵",
+      "description": "雲吞搭配大骨湯與麵條",
+      "image": "/images/food/023.jpg",
+      "duration": "medium",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "中式料理"
+      ],
+      "occasion": [
+        "casual"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "medium"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "chinese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food024",
+      "title": "素食壽司卷",
+      "description": "蔬菜與豆皮捲成的壽司組合",
+      "image": "/images/food/024.jpg",
+      "duration": "short",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "素食",
+      "rating": "medium",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "casual",
+        "romantic"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "vegetarian"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "medium"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "romantic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "food025",
+      "title": "豬排飯",
+      "description": "剛剛才養大的豬",
+      "image": "/images/food/025.jpg",
+      "duration": "short",
+      "person": [
+        "single",
+        "double"
+      ],
+      "diet": "葷素皆可",
+      "rating": "budget",
+      "preference": [
+        "日式料理"
+      ],
+      "occasion": [
+        "casual",
+        "celebrate",
+        "romantic",
+        "family"
+      ],
+      "answer": [
+        {
+          "id": "duration",
+          "type": "range",
+          "value": "short"
+        },
+        {
+          "id": "person",
+          "type": "radio",
+          "value": [
+            "single",
+            "double"
+          ]
+        },
+        {
+          "id": "diet",
+          "type": "radio",
+          "value": [
+            "none"
+          ]
+        },
+        {
+          "id": "rating",
+          "type": "radio",
+          "value": [
+            "budget"
+          ]
+        },
+        {
+          "id": "preference",
+          "type": "checkbox",
+          "value": [
+            "japanese"
+          ]
+        },
+        {
+          "id": "occasion",
+          "type": "checkbox",
+          "value": [
+            "casual",
+            "celebrate",
+            "romantic",
+            "family"
+          ]
+        }
+      ]
+    }
+  ]
+}

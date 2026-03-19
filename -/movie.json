@@ -1,0 +1,615 @@
+{
+    "questionnaire": {
+        "title": "懶惰影迷看什麼？",
+        "titlePic": "https://images.plurk.com/5z4IlpXfbtkOs151EpW2Kc.jpg",
+        "questions": [
+            {
+                "id": "duration",
+                "field": "duration",
+                "type": "range",
+                "label": "你有多少時間可以看電影？",
+                "unit": "分鐘",
+                "min": 30,
+                "max": 180,
+                "step": 15,
+                "default": 90
+            },
+            {
+                "id": "person",
+                "field": "person",
+                "type": "radio",
+                "label": "今日影迷有幾位？",
+                "options": [
+                    {
+                        "id": "single",
+                        "label": "一人"
+                    },
+                    {
+                        "id": "couple",
+                        "label": "兩人"
+                    },
+                    {
+                        "id": "group",
+                        "label": "多人"
+                    }
+                ]
+            },
+            {
+                "id": "afterMovie",
+                "field": "afterMovie",
+                "type": "radio",
+                "label": "電影之後的行程？",
+                "options": [
+                    {
+                        "id": "sleep",
+                        "label": "躺平"
+                    },
+                    {
+                        "id": "dining",
+                        "label": "用餐"
+                    },
+                    {
+                        "id": "outdoor",
+                        "label": "戶外活動"
+                    }
+                ]
+            },
+            {
+                "id": "rating",
+                "field": "rating",
+                "type": "radio",
+                "label": "電影評價選擇",
+                "options": [
+                    {
+                        "id": "dontcare",
+                        "label": "都可以"
+                    },
+                    {
+                        "id": "high",
+                        "label": "高於六分"
+                    }
+                ]
+            },
+            {
+                "id": "language",
+                "field": "language",
+                "type": "checkbox",
+                "label": "語系偏好（可複選）",
+                "options": [
+                    {
+                        "id": "western",
+                        "label": "歐美"
+                    },
+                    {
+                        "id": "japanese",
+                        "label": "日文"
+                    },
+                    {
+                        "id": "korean",
+                        "label": "韓文"
+                    },
+                    {
+                        "id": "mandarin",
+                        "label": "華文"
+                    }
+                ]
+            },
+            {
+                "id": "mood",
+                "field": "mood",
+                "type": "checkbox",
+                "label": "你今天想要（可複選）",
+                "options": [
+                    {
+                        "id": "cry",
+                        "label": "哭哭啼啼"
+                    },
+                    {
+                        "id": "laugh",
+                        "label": "放聲大笑"
+                    },
+                    {
+                        "id": "shock",
+                        "label": "來點驚嚇"
+                    },
+                    {
+                        "id": "romantic",
+                        "label": "浪漫一波"
+                    }
+                ]
+            }
+        ],
+        "required": {
+            "radio": [
+                "duration",
+                "person",
+                "afterMovie",
+                "rating"
+            ],
+            "checkbox": [
+                "language",
+                "mood"
+            ]
+        }
+    },
+    "movies": [
+        {
+            "id": "movie001",
+            "title": "天能",
+            "description": "一場逆轉時間的特工任務",
+            "image": "https://www.themoviedb.org/t/p/w1280/tASJpacWyivVyRnUahaxT2cJg5L.jpg",
+            "duration": "long",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "fun",
+            "language": "歐美",
+            "genres": [
+                "動作",
+                "科幻",
+                "驚悚"
+            ],
+            "rating": true,
+            "a": [
+                {
+                    "id": "genres",
+                    "type": "checkbox",
+                    "value": [
+                        "動作",
+                        "科幻",
+                        "驚悚"
+                    ]
+                },
+                {
+
+                }
+            ]
+        },
+        {
+            "id": "movie002",
+            "title": "你的名字",
+            "description": "跨越時空的奇幻愛情故事",
+            "image": "https://www.themoviedb.org/t/p/w1280/re9VGdZlwTrzo9G5mQ0Ywtus6uU.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "romantic",
+            "language": "日文",
+            "genres": [
+                "愛情",
+                "動畫",
+                "奇幻"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie003",
+            "title": "82年生的金智英",
+            "description": "探討女性在社會中的掙扎與成長",
+            "image": "https://www.themoviedb.org/t/p/w1280/sb86p7v10x2Q0Ume8nwLqKDvqB1.jpg",
+            "duration": "medium",
+            "person": [
+                "single"
+            ],
+            "mood": "emotional",
+            "language": "韓文",
+            "genres": [
+                "劇情",
+                "女性",
+                "成長"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie004",
+            "title": "寄生上流",
+            "description": "描寫階級對立的黑色喜劇驚悚片",
+            "image": "https://www.themoviedb.org/t/p/w1280/nwTQE4vWe6NoFSEgxGu4hO9J4Tv.jpg",
+            "duration": "long",
+            "person": [
+                "couple",
+                "group"
+            ],
+            "mood": "tense",
+            "language": "韓文",
+            "genres": [
+                "驚悚",
+                "劇情",
+                "黑色幽默"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie005",
+            "title": "小丑",
+            "description": "探討社會與心理疾病的黑暗傳記",
+            "image": "https://www.themoviedb.org/t/p/w1280/hHGbcQTUbVEFXmkDQPPcejFWY1c.jpg",
+            "duration": "long",
+            "person": [
+                "single"
+            ],
+            "mood": "dark",
+            "language": "歐美",
+            "genres": [
+                "劇情",
+                "犯罪",
+                "心理"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie006",
+            "title": "名偵探柯南：萬聖節的新娘",
+            "description": "柯南與朋友們揭開婚禮中的恐怖陰謀",
+            "image": "https://www.themoviedb.org/t/p/w1280/aeQ7AlE0m5hSuWsizJNufIscIV2.jpg",
+            "duration": "medium",
+            "person": [
+                "group"
+            ],
+            "mood": "exciting",
+            "language": "日文",
+            "genres": [
+                "懸疑",
+                "動畫",
+                "推理"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie007",
+            "title": "天氣之子",
+            "description": "一段與天氣交織的青春奇幻愛情",
+            "image": "https://www.themoviedb.org/t/p/w1280/4IKNr9R9HpaIUFVHivTDa3Vdplj.jpg",
+            "duration": "medium",
+            "person": [
+                "couple"
+            ],
+            "mood": "romantic",
+            "language": "日文",
+            "genres": [
+                "動畫",
+                "愛情",
+                "奇幻"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie008",
+            "title": "返校",
+            "description": "白色恐怖背景下的驚悚懸疑",
+            "image": "https://image.tmdb.org/t/p/w1280/2IiYOxfJJjU7oSaug5vudwxwhRo.jpg",
+            "duration": "short",
+            "person": [
+                "single",
+                "group"
+            ],
+            "mood": "scary",
+            "language": "華文",
+            "genres": [
+                "驚悚",
+                "歷史",
+                "劇情"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie009",
+            "title": "角落小夥伴電影版",
+            "description": "溫馨可愛的角色陪你療癒心靈",
+            "image": "https://www.themoviedb.org/t/p/w1280/fudKmoQwH3vTEITfSdRMefGI9KH.jpg",
+            "duration": "short",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "healing",
+            "language": "日文",
+            "genres": [
+                "動畫",
+                "兒童",
+                "家庭"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie010",
+            "title": "我吃了那男孩一整年的早餐",
+            "description": "青春校園裡的戀愛與成長",
+            "image": "https://www.themoviedb.org/t/p/w1280/lCMirnpsOPP4MoLcr2JOHM9LP6Y.jpg",
+            "duration": "medium",
+            "person": [
+                "couple"
+            ],
+            "mood": "sweet",
+            "language": "華文",
+            "genres": [
+                "愛情",
+                "青春",
+                "劇情"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie011",
+            "title": "獅子王",
+            "description": "經典迪士尼動畫，成長與冒險的故事",
+            "image": "https://www.themoviedb.org/t/p/w1280/eFtJyNhv339OHknjFNq76bkxPlw.jpg",
+            "duration": "medium",
+            "person": [
+                "group"
+            ],
+            "mood": "uplifting",
+            "language": "歐美",
+            "genres": [
+                "動畫",
+                "家庭",
+                "冒險"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie012",
+            "title": "大佛普拉斯",
+            "description": "描寫底層人物生活的黑色幽默片",
+            "image": "https://www.themoviedb.org/t/p/w1280/1nDK6Kd0yAk6eoULAoI7e8wv4Mw.jpg",
+            "duration": "medium",
+            "person": [
+                "single"
+            ],
+            "mood": "dark",
+            "language": "華文",
+            "genres": [
+                "黑色幽默",
+                "劇情",
+                "台灣"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie013",
+            "title": "海街日記",
+            "description": "四姐妹的日常與情感交織的生活故事",
+            "image": "https://www.themoviedb.org/t/p/w1280/rcV6mB9OhVq4o9F9ylpDLdR0luu.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "healing",
+            "language": "日文",
+            "genres": [
+                "劇情",
+                "家庭",
+                "成長"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie014",
+            "title": "燃燒女子的畫像",
+            "description": "藝術與禁忌愛情交織的唯美之作",
+            "image": "https://www.themoviedb.org/t/p/w1280/mu2NLRxP9u27wEMNcub61Alr8uY.jpg",
+            "duration": "long",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "romantic",
+            "language": "歐美",
+            "genres": [
+                "愛情",
+                "歷史",
+                "劇情"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie015",
+            "title": "犬之島",
+            "description": "奇幻停格動畫與政治寓言的完美結合",
+            "image": "https://www.themoviedb.org/t/p/w1280/6o7cIPUwasrxJyt4ods79EbLRfd.jpg",
+            "duration": "medium",
+            "person": [
+                "group"
+            ],
+            "mood": "quirky",
+            "language": "歐美",
+            "genres": [
+                "動畫",
+                "冒險",
+                "科幻"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie016",
+            "title": "媽的多重宇宙",
+            "description": "一場充滿混亂與感動的多重宇宙旅程",
+            "image": "https://www.themoviedb.org/t/p/w1280/nXgDWQdULWjMoIAEUQg0reXeWL0.jpg",
+            "duration": "long",
+            "person": [
+                "couple",
+                "group"
+            ],
+            "mood": "chaotic",
+            "language": "歐美",
+            "genres": [
+                "動作",
+                "喜劇",
+                "科幻"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie017",
+            "title": "小太陽的願望",
+            "description": "一家人踏上充滿希望與笑淚的旅程",
+            "image": "https://www.themoviedb.org/t/p/w1280/wKn7AJw730emlmzLSmJtzquwaeW.jpg",
+            "duration": "medium",
+            "person": [
+                "group"
+            ],
+            "mood": "uplifting",
+            "language": "歐美",
+            "genres": [
+                "喜劇",
+                "劇情",
+                "家庭"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie018",
+            "title": "咒",
+            "description": "台灣最恐怖的民俗驚悚片之一",
+            "image": "https://www.themoviedb.org/t/p/w1280/fLA1yvDwH1JxiiJW0ObOxkrkusR.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "group"
+            ],
+            "mood": "scary",
+            "language": "華文",
+            "genres": [
+                "恐怖",
+                "驚悚",
+                "民俗"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie019",
+            "title": "放牛班的春天",
+            "description": "感人至深的師生情誼與音樂啟蒙",
+            "image": "https://www.themoviedb.org/t/p/w1280/yHMNLZAlH9q7sz9A5vcgYby9IGW.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "group"
+            ],
+            "mood": "emotional",
+            "language": "歐美",
+            "genres": [
+                "劇情",
+                "音樂",
+                "教育"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie020",
+            "title": "海邊的曼徹斯特",
+            "description": "哀傷與救贖交錯的人生低谷",
+            "image": "https://www.themoviedb.org/t/p/w1280/tZ3cAEoLRJp4ebVzIef7y8xzHlx.jpg",
+            "duration": "long",
+            "person": [
+                "single"
+            ],
+            "mood": "dark",
+            "language": "歐美",
+            "genres": [
+                "劇情",
+                "家庭",
+                "悲劇"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie021",
+            "title": "我想有個家",
+            "description": "敘利亞小男孩在戰火中求生的真實寫照",
+            "image": "https://www.themoviedb.org/t/p/w1280/xbHrK3Xl0OaHUuDaPXZ8mnllgT4.jpg",
+            "duration": "long",
+            "person": [
+                "single"
+            ],
+            "mood": "emotional",
+            "language": "阿拉伯語",
+            "genres": [
+                "劇情",
+                "紀實",
+                "社會寫實"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie022",
+            "title": "企鵝寶貝",
+            "description": "記錄南極企鵝育兒的溫馨紀錄片",
+            "image": "https://www.themoviedb.org/t/p/w1280/o9xJ1xG1WKlHkl8ACqq0LShOuMu.jpg",
+            "duration": "short",
+            "person": [
+                "group",
+                "couple"
+            ],
+            "mood": "healing",
+            "language": "歐美",
+            "genres": [
+                "紀錄片",
+                "自然",
+                "家庭"
+            ],
+            "rating": false
+        },
+        {
+            "id": "movie023",
+            "title": "布達佩斯大飯店",
+            "description": "一場發生在虛構歐洲國度的幽默懸疑旅程",
+            "image": "https://www.themoviedb.org/t/p/w1280/2OfmHuihnQs43CtoiPfy4bAIvBS.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "group"
+            ],
+            "mood": "fun",
+            "language": "歐美",
+            "genres": [
+                "喜劇",
+                "犯罪",
+                "劇情"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie024",
+            "title": "玩具總動員3",
+            "description": "玩具們面臨離別與新生活的感人冒險",
+            "image": "https://www.themoviedb.org/t/p/w1280/zOpj9XcRHKiHzS3z9I7NdTFX48O.jpg",
+            "duration": "medium",
+            "person": [
+                "couple",
+                "family"
+            ],
+            "mood": "warm",
+            "language": "歐美",
+            "genres": [
+                "動畫",
+                "冒險",
+                "家庭"
+            ],
+            "rating": true
+        },
+        {
+            "id": "movie026",
+            "title": "王牌冤家",
+            "description": "一對戀人抹除彼此記憶後的奇幻愛情故事",
+            "image": "https://www.themoviedb.org/t/p/w1280/a10t6Etv9cHz5pTNl9RyqspbdnY.jpg",
+            "duration": "medium",
+            "person": [
+                "single",
+                "couple"
+            ],
+            "mood": "emotional",
+            "language": "歐美",
+            "genres": [
+                "愛情",
+                "劇情",
+                "科幻"
+            ],
+            "rating": true
+        }
+    ]
+}

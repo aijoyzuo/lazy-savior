@@ -1,0 +1,144 @@
+{
+  "data": {
+    "title": "今天你要吃什麼？",
+    "titlePic": "https://images.plurk.com/7bOPDHtObBCchJ8xKdtdHJ.jpg ",
+    "questions": [
+      {
+        "id": "duration",
+        "field": "duration",
+        "type": "range",
+        "label": "你有多少時間可以用餐？",
+        "required": true,
+        "min": 0,
+        "max": 120,
+        "unit": "分鐘"
+      },
+      {
+        "id": "person",
+        "field": "person",
+        "type": "radio",
+        "label": "今日吃貨有幾位？",
+        "required": true,
+        "options": [
+          {
+            "id": "single",
+            "label": "一人"
+          },
+          {
+            "id": "double",
+            "label": "雙人"
+          },
+          {
+            "id": "group",
+            "label": "多人"
+          }
+        ]
+      },
+      {
+        "id": "diet",
+        "field": "diet",
+        "type": "radio",
+        "label": "飲食限制？",
+        "required": true,
+        "options": [
+          {
+            "id": "none",
+            "label": "不限"
+          },
+          {
+            "id": "vegetarian",
+            "label": "素食"
+          }
+        ],
+        "weight": 8
+      },
+      {
+        "id": "rating",
+        "field": "rating",
+        "type": "radio",
+        "label": "預算範圍",
+        "required": true,
+        "options": [
+          {
+            "id": "budget",
+            "label": "平價"
+          },
+          {
+            "id": "medium",
+            "label": "中等"
+          },
+          {
+            "id": "premium",
+            "label": "高價"
+          }
+        ]
+      },
+      {
+        "id": "preference",
+        "field": "preference",
+        "type": "checkbox",
+        "label": "飲食偏好(複選)",
+        "minSelect": 1,
+        "options": [
+          {
+            "id": "thai",
+            "label": "泰式"
+          },
+          {
+            "id": "japanese",
+            "label": "日式"
+          },
+          {
+            "id": "korean",
+            "label": "韓式"
+          },
+          {
+            "id": "italian",
+            "label": "義式"
+          },
+          {
+            "id": "chinese",
+            "label": "中式"
+          }
+        ],
+        "weight": 3
+      },
+      {
+        "id": "occasion",
+        "field": "occasion",
+        "type": "checkbox",
+        "label": "用餐場合(複選)",
+        "minSelect": 1,
+        "options": [
+          {
+            "id": "casual",
+            "label": "日常"
+          },
+          {
+            "id": "celebrate",
+            "label": "慶祝"
+          },
+          {
+            "id": "romantic",
+            "label": "約會"
+          },
+          {
+            "id": "family",
+            "label": "家人"
+          }
+        ]
+      }
+    ],
+    "required": {
+      "radio": [
+        "person",
+        "diet",
+        "rating"
+      ],
+      "checkbox": [
+        "preference",
+        "occasion"
+      ]
+    }
+  }
+}

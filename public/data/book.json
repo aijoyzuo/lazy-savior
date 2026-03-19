@@ -1,0 +1,134 @@
+{
+    "data": {
+        "title": "懶惰書迷看什麼？",
+        "titlePic": "https://images.plurk.com/7EcCdUS4IqxDzf03xeKeag.jpg ",
+        "questions": [
+            {
+                "id": "durationk",
+                "field": "duration",
+                "type": "range",
+                "label": "你有多少時間可以看書？",
+                "required": true,
+                "min": 0,
+                "max": 120,
+                "unit": "分鐘"
+            },
+            {
+                "id": "genre",
+                "field": "genre",
+                "type": "radio",
+                "label": "你的閱讀偏好？",
+                "required": true,
+                "options": [
+                    {
+                        "id": "fiction",
+                        "label": "小說"
+                    },
+                    {
+                        "id": "history",
+                        "label": "歷史"
+                    },
+                    {
+                        "id": "inspiration",
+                        "label": "勵志"
+                    },
+                    {
+                        "id": "mystery",
+                        "label": "懸疑"
+                    }
+                ],
+                "weight": 6
+            },
+            {
+                "id": "preference",
+                "field": "preference",
+                "type": "radio",
+                "label": "系列作偏好？",
+                "required": true,
+                "options": [
+                    {
+                        "id": "none",
+                        "label": "不限"
+                    },
+                    {
+                        "id": "standalone",
+                        "label": "單行本"
+                    },
+                    {
+                        "id": "series",
+                        "label": "系列作"
+                    }
+                ]
+            },
+            {
+                "id": "rating",
+                "field": "rating",
+                "type": "radio",
+                "label": "書籍年齡層",
+                "required": true,
+                "options": [
+                    {
+                        "id": "child",
+                        "label": "兒童讀物"
+                    },
+                    {
+                        "id": "general",
+                        "label": "普遍級"
+                    },
+                    {
+                        "id": "restricted",
+                        "label": "限制級"
+                    }
+                ],
+                "weight": 4
+            },
+            {
+                "id": "language",
+                "field": "language",
+                "type": "checkbox",
+                "label": "語系偏好(複選)",
+                "minSelect": 1,
+                "options": [
+                    {
+                        "id": "western",
+                        "label": "歐美"
+                    },
+                    {
+                        "id": "japanese",
+                        "label": "日文"
+                    },
+                    {
+                        "id": "korean",
+                        "label": "韓文"
+                    },
+                    {
+                        "id": "mandarin",
+                        "label": "華文"
+                    }
+                ],
+                "weight": 3
+            },
+            {
+                "id": "mood",
+                "field": "mood",
+                "type": "checkbox",
+                "label": "現在想要(複選)",
+                "minSelect": 1,
+                "options": [
+                    {
+                        "id": "emotional",
+                        "label": "感性一下"
+                    },
+                    {
+                        "id": "relaxing",
+                        "label": "放鬆一下"
+                    },
+                    {
+                        "id": "thrilling",
+                        "label": "刺激一下"
+                    }
+                ]
+            }
+        ]
+    }
+}
