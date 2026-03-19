@@ -44,14 +44,16 @@ src
  ┣ RecommendFood.tsx
  ┣ RecommendMovie.tsx
  ┗ index.tsx
-🔧 Installation
+
+Installation
 git clone https://github.com/aijoyzuo/lazy-savior.git
 npm install
 npm start
-📌 Purpose
+
+Purpose
 
 This project was created to practice frontend application structure, quiz interaction flow, and category-based recommendation UI using React and TypeScript.
 
-👨‍💻 Author
+Author
 
 GitHub: https://github.com/aijoyzuo
